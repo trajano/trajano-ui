@@ -7,6 +7,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/preset-scss",
     "@storybook/addon-essentials",
+    "@storybook/addon-a11y",
     "storybook-dark-mode",
   ],
 };
