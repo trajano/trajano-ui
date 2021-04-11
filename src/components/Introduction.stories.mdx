@@ -1,0 +1,93 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# Trajano Design Language
+
+This describes the UI components for [my personal website](https://trajano.net).  It is not meant to be used outside the context of my website, the 
+in fact the colors are preset to my liking and not modifiable. 
+
+## Really flat
+
+Though I like skeuomorphism generally, I find it adds more focus to the control elements rather than the content.  So I in this attempt of building a UI, I intentionally went all flat (i.e. not even shadows) on the default state.
+
+## Consistent font sizes
+
+Most UI frameworks have support for alternate font sizes between buttons and content.  In order to diminish focus on the buttons I have attempted to keep everything the same size.
+
+## Light and Dark MODE
+
+I put an emphasis on *MODE* rather than using the word *theme*.  As someone had explained it which I am paraphrasing, Light and Dark MODE talks about a user's preference in viewing the content, light mode being similar to paper where dark mode would be similar to the old green screen displays of old.  As such you'd notice that some controls still retain their colors whether it is light or dark mode.
+
+## Color scheme
+
+The general idea for the site was to reduce the amount of "blue" overall.  Don't get me wrong, I like blue, it's my favorite color.  But I do find too much of it to strain my eyes.
+
+The color selection goes as follows:
+
+1. from PANTONE choose a TPG/TPX color
+2. given that color determine the luminance value as per WCAG
+3. Adjust the L value in the HSL until the luminance matches that of a shade of gray, `#767676`, that was chosen because the contrast against black and white are the highest.
+4. That becomes the pallete color.
+
+By doing this, the lighten/darken operations look more consistent.
+
+The base color I used was [Papyrus](https://www.pantone.com/color-finder/11-0107-TPG) to give it a tone that is a little easier on the eyes.  White being too much strain due to the blue levels.
+
+For "primary" I chose [Quetzal Green](https://www.pantone.com/color-finder/18-5025-TPG), it is strong in both blue/green which gives it a positive vibe.  It's not too blue to prevent too much detraction from the content.
+
+For "error" I chose [Fiery Red](https://www.pantone.com/color-finder/18-1664-TCX), no particular reason, just wanted to have a redish color as the base.
+
+For "disabled", I chose the standard gray color of `#808080`.  It's universally recognized enough.
+
+For "active" I chose [Provence](https://www.pantone.com/color-finder/16-4032-TPG) which has a strong blue level.
+
+In light mode, the background color is Pantone beige `#d5ba98` lightened by 20%.  I chose this colour as beige is a color that's generally easy on the eyes and does not get affected by nightshift too much.
+
+In dark mode, the background color is X11 Midnight Blue `#191970` darkened by 20%.  I chose this color so that it gives a slight pop due to the blue, though 
+
+In dark mode, the background color is X11 Teal `#008080` darkened by 20%.  I chose this color so that the blue is not too straining (as compared to Midnight blue)
+
+## Fibionacci Percentages
+
+* 100
+* 61.80469716
+* 38.19820591
+* 23.60828548
+* 14.59102934
+* 9.017941499
+* 5.573511433
+* 3.444691862
+* 2.128981373
+* 1.31581049
+* 0.8132326887
+* 0.5026160005
+* 0.3106402969
+* 0.1919902948
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
