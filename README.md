@@ -27,3 +27,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Dark-mode vs light-mode 
+
+in the `body` there's a `.dark-mode` and `.light-mode` global switch.
